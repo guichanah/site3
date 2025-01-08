@@ -1,0 +1,201 @@
+:root {
+  font-family: "Montserrat", "NanumBarunGothic";
+  font-size: 12px;
+}
+
+body {
+  line-height: 1.6;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+  z-index: 100;
+}
+header .inner {
+  padding: 0 100px;
+}
+header a:hover {
+  color: #20bec6;
+}
+header #logo {
+  margin: 18px 50px 0 15px;
+  float: left;
+}
+header #logo a {
+  width: 100px;
+  height: 28px;
+  text-indent: -9999px;
+  background: url("../images/logo.png") no-repeat;
+  background-size: 100% auto;
+}
+header #logo a:hover {
+  background-position: 0 bottom;
+  transition: all 0.2s ease-in-out;
+}
+
+#gnb li {
+  float: left;
+  margin-top: 8px;
+}
+#gnb a {
+  font-weight: bold;
+  width: 70px;
+  padding: 15px;
+}
+#gnb a::after {
+  content: "";
+  display: block;
+  background: #fff;
+  height: 2px;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+#gnb a:hover::after {
+  width: 100%;
+}
+#gnb .sub {
+  display: none;
+}
+#gnb .sub li {
+  float: none;
+  margin: 0 0 0 15px;
+}
+#gnb .sub a {
+  font-weight: normal;
+  padding: 0;
+  font-size: 10px;
+  white-space: nowrap;
+}
+#gnb .sub a::after {
+  display: none;
+}
+#gnb .sub a:hover {
+  text-decoration: underline;
+}
+#gnb:hover .sub {
+  display: block;
+}
+
+#sns {
+  float: right;
+}
+#sns li {
+  float: left;
+  margin-top: 8px;
+}
+#sns a {
+  padding: 15px 5px;
+}
+
+#mainvisual {
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+#mainvisual .slider {
+  height: 100vh;
+  display: flex;
+}
+#mainvisual .slider article {
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+  background: center center no-repeat;
+  background-size: cover;
+}
+#mainvisual .slider article::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+#mainvisual .slider .view1 {
+  background-image: url("../images/view01.jpg");
+}
+#mainvisual .slider .view2 {
+  background-image: url("../images/view02.jpg");
+}
+#mainvisual .slider .view3 {
+  background-image: url("../images/view03.jpg");
+}
+#mainvisual .slider .view4 {
+  background-image: url("../images/view04.jpg");
+}
+#mainvisual .slider .view5 {
+  background-image: url("../images/view05.jpg");
+}
+#mainvisual .slider .view6 {
+  background-image: url("../images/view06.jpg");
+}
+#mainvisual .slider .text {
+  color: #fff;
+  position: absolute;
+  bottom: 120px;
+  left: 120px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#mainvisual .slider .text h3 {
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+#mainvisual .slider .text p {
+  font-size: 18px;
+  padding: 20px 0;
+}
+#mainvisual .slider .text a {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+#mainvisual .slider .text a:hover {
+  background: #fff;
+  color: #000;
+}
+#mainvisual .slider .text i {
+  display: inline-block;
+  vertical-align: -1px;
+  padding-left: 6px;
+}
+#mainvisual .slider .active .text {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+#mainvisual .pager {
+  position: absolute;
+  z-index: 10;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mainvisual .pager span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+#mainvisual .pager span.active {
+  background: #fff;
+}/*# sourceMappingURL=style.css.map */
