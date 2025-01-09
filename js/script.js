@@ -1,3 +1,9 @@
+/*header 스크롤클래스 호출*/
+var header = new EzenScrollClass("header", {
+    baseline:100,
+});
+
+
 /*mainvisual 스와이퍼 호출*/
 var mainvisual = new Swiper("#mainvisual", {
     wrapperClass:"slider", //슬라이드 요소를 감싸는 요소의 클래스
